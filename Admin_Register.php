@@ -11,7 +11,7 @@
           
           <a href="Login.php">Customer Section</a>
           <a class="active" href="Admin_Login.php">Admin Panel</a>
-          <a href="Contact_us.php">Contact us</a>
+          <a href="Contact_us.php">Contact Us</a>
   
     </div>
 
@@ -22,7 +22,7 @@
       <div class="">
         <form class="form-signin" method="post" action="">  
 
-          <h2 class="form-signin-heading">Sign up</h2>
+          <h2 class="form-signin-heading">Sign Up</h2>
 
           <input type="text" class="form-control" name="name" placeholder="Full Name" required="" autofocus="" />
 
@@ -54,7 +54,7 @@
           <br>
           <br>
 
-          <input type="text" class="form-control" name="birth" placeholder="Birth date" required="" autofocus="" />
+          <input type="text" class="form-control" name="birth" placeholder="Date of Birth" required="" autofocus="" />
 
           <br>
           <br>
@@ -68,7 +68,7 @@
           <br>
           <br>  
                 
-          <a href="Admin_Login.php">Already a member? </a>
+          <a href="Admin_Login.php">Already a Member? </a>
 
           <br>
           <br>
@@ -123,8 +123,8 @@
       $sql2 = "SELECT * FROM admin_registration WHERE Contact='$id2'";
       $result = mysqli_query($conn, $sql2);
       if (mysqli_num_rows($result) > 0) {
-        echo '<script>alert("Contact no already registered!")</script>'; 
-          //echo "<br><center><font color=Red>Contact no already registered!</font></center>";
+        echo '<script>alert("Contact no. already registered!")</script>'; 
+          //echo "<br><center><font color=Red>Contact number already registered!</font></center>";
           die();
 
       }
